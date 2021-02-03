@@ -139,10 +139,9 @@ footer {
 
     /* HTML Styles */
     body {
-        background: url(../assets/tablet/image-host.jpg) top right no-repeat;
+        background: url(../assets/tablet/image-host.jpg) top right no-repeat, #121725;
         box-shadow: none;
         background-blend-mode: lighten;
-        background-color: #121725;
         background-size: initial;
         text-align: left;
         font-size: 18px;
@@ -210,4 +209,30 @@ footer {
     #platform-icons {
         width: 85%;
     }
+}
+
+@media screen and (min-width: 1440px) {
+    /* HTML Styles */
+
+    body {
+        background: url(../assets/desktop/image-host.jpg) center right no-repeat, #121725;
+        box-shadow: none;
+        background-blend-mode: lighten;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        bottom: 78px;
+        margin-left: 0px;
+    }
+
+    /* Custom Attribute Styles */
+
+    #landing-page {
+        margin: 165px;
+        width: 50%;
+    }
+
 }
