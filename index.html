@@ -19,9 +19,9 @@
 
 <body>
 
-  <div id="logo-containter">
+  <header id="logo-containter">
     <img src="./assets/desktop/logo.svg" alt="pod-logo">
-  </div>
+  </header>
 
   <div id="landing-page">
 
@@ -31,24 +31,26 @@
       Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
 
     <div id="platform-icons">
-      <img src="./assets/desktop/spotify.svg" alt="Spotify Icon">
-      <img src="./assets/desktop/apple-podcast.svg" alt="Apple Podcast Icon">
-      <img src="./assets/desktop/google-podcasts.svg" alt="Google Podcasts Icon">
-      <img src="./assets/desktop/pocket-casts.svg" alt="Pocket Casts Icon">
+      <img class="spotify-icon" src="./assets/desktop/spotify.svg" alt="Spotify Icon">
+      <img class="apple-podcast-icon" src="./assets/desktop/apple-podcast.svg" alt="Apple Podcast Icon">
+      <img class="google-podcasts-icon" src="./assets/desktop/google-podcasts.svg" alt="Google Podcasts Icon">
+      <img class="pocket-casts-icon" src="./assets/desktop/pocket-casts.svg" alt="Pocket Casts Icon">
     </div>
 
     <form action="/" method="POST" target="_blank" name="email-only-form">
-      <ul>
-        <li>
-          <label for="email"></label><input type="email" id="email" name="email" placeholder="Email address">
-        </li>
-        <li>
-          <label for="submit"></label><input type="submit" id="submit" name="submit" value="Request Access">
-        </li>
-      </ul>
+
+      <legend>Email Input</legend>
+
+      <label for="email">Email</label><input type="email" id="email" name="email" placeholder="Email address">
+      <label for="submit">Submit</label><input type="submit" id="submit" name="submit" value="Request Access">
     </form>
+
   </div>
 
+  <footer>
+    <img src="assets/desktop/bg-pattern-dots.svg">
+  </footer>
+  
 </body>
 
 </html>
