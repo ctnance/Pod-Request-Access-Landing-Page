@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Pod request access landing page</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-  Publish your podcasts everywhere.
 
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
+  <div id="logo-containter">
+    <img src="./assets/desktop/logo.svg" alt="pod-logo">
+  </div>
 
-  Request access
+  <div id="landing-page">
+
+    <h1>Publish your podcasts <span>everywhere.</span></h1>
+
+    <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
+      Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+
+    <div id="platform-icons">
+      <img src="./assets/desktop/spotify.svg" alt="Spotify Icon">
+      <img src="./assets/desktop/apple-podcast.svg" alt="Apple Podcast Icon">
+      <img src="./assets/desktop/google-podcasts.svg" alt="Google Podcasts Icon">
+      <img src="./assets/desktop/pocket-casts.svg" alt="Pocket Casts Icon">
+    </div>
+
+    <form action="/" method="POST" target="_blank" name="email-only-form">
+      <ul>
+        <li>
+          <label for="email"></label><input type="email" id="email" name="email" placeholder="Email address">
+        </li>
+        <li>
+          <label for="submit"></label><input type="submit" id="submit" name="submit" value="Request Access">
+        </li>
+      </ul>
+    </form>
+  </div>
+
 </body>
+
 </html>
