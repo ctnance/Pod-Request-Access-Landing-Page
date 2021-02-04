@@ -131,6 +131,7 @@ footer {
     max-width: 100%;
     height: auto;
     min-width: 0;
+    opacity: 60%;
 }
 
 .spotify-icon {
@@ -143,6 +144,16 @@ footer {
 
 .google-podcasts-icon {
     margin-right: 16px;
+}
+
+#email-error {
+    display: none;
+    color: #FB3E3E;
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: .5em;
 }
 
 @media screen and (min-width: 766px) {
@@ -222,6 +233,10 @@ footer {
     #platform-icons {
         width: 85%;
     }
+
+    #email-error {
+        position: absolute;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -255,5 +270,4 @@ footer {
         width: 50%;
         padding-bottom: 5em;
     }
-
 }
