@@ -26,12 +26,13 @@ body {
 }
 
 body::before {
-    content: "";
+    content: " ";
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
+    height: 100vh;
     background-color: rgba(18, 23, 37, 0.9);
     z-index: -1;
 }
@@ -132,6 +133,7 @@ footer {
     height: auto;
     min-width: 0;
     opacity: 60%;
+    filter: invert(38%) sepia(46%) saturate(326%) hue-rotate(186deg) brightness(94%) contrast(88%);
 }
 
 .spotify-icon {
@@ -162,6 +164,7 @@ footer {
     body {
         background: url(../assets/tablet/image-host.jpg) top right no-repeat, #121725;
         background-size: initial;
+        background-blend-mode: lighten;
         text-align: left;
         font-size: 18px;
     }
@@ -245,7 +248,10 @@ footer {
     body {
         background: url(../assets/desktop/image-host.jpg) center right no-repeat, #121725;
         box-shadow: none;
-        background-blend-mode: lighten;
+    }
+
+    input[type="email"] {
+        width: 60%;
     }
 
     footer {
@@ -270,4 +276,21 @@ footer {
         width: 50%;
         padding-bottom: 5em;
     }
+
+    #platform-icons {
+        width: 75%;
+    }
+
+    .spotify-icon {
+        margin-right: 40px;
+    }
+    
+    .apple-podcast-icon {
+        margin-right: 40px;
+    }
+    
+    .google-podcasts-icon {
+        margin-right: 27px;
+    }
+    
 }
